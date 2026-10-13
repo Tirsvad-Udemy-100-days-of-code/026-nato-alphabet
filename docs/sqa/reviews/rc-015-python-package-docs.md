@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of PY-003 | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of PY-003 | [92b9543] |
 
 ---
 
@@ -57,3 +57,4 @@ Go — re-review of the package after MIL-003 changed only the package docstring
 
 [PY-003]: ../../../src/nato_alphabet/__init__.py
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[92b9543]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/92b954331c2deb7f9f641eb6266007496b404356
