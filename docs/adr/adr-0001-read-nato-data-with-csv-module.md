@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-006 | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-006 | [32a8b84] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -51,3 +51,4 @@ Read the NATO alphabet with the standard library `csv` module (`csv.DictReader`)
 
 [BC-001]: ../business-case.md
 [SA-001]: ../stakeholder-analysis.md
+[32a8b84]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/32a8b848c5ffc8081532d137881d9e04cbc2c051
