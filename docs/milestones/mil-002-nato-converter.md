@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-004 | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-004 | [7212302] |
 
 ---
 
@@ -74,3 +74,4 @@ The `nato_alphabet` package with a runnable entry point, a test suite that passe
 
 [BC-001]: ../business-case.md
 [MIL-001]: ./mil-001-repository-foundation.md
+[7212302]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/7212302fb9d9fe411215d4702d56a7cfe8834f1a

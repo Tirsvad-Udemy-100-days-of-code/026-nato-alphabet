@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, accepted as Product Owner stand-in (no QC checklist for PP yet) | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, accepted as Product Owner stand-in (no QC checklist for PP yet) | [7212302] |
 
 ---
 
@@ -87,3 +87,4 @@ A No-Go on a gateway holds the later ones until the cause is fixed and the gatew
 [MIL-001]: ./milestones/mil-001-repository-foundation.md
 [MIL-002]: ./milestones/mil-002-nato-converter.md
 [MIL-003]: ./milestones/mil-003-documentation-and-publication.md
+[7212302]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/7212302fb9d9fe411215d4702d56a7cfe8834f1a
