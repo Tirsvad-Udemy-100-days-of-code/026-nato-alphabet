@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for ADR-0001, ADR-0002, the CI workflow and the Python skeleton (RC-006 to RC-009) | [a381791] |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
 
 ---
 
@@ -84,3 +84,4 @@ Tracks backward and forward links between artifact instances so that the cross-a
 [RC-012]: ./reviews/rc-012-uc-001.md
 [RC-013]: ./reviews/rc-013-ssd-001.md
 [RC-014]: ./reviews/rc-014-python-converter.md
+[1b7da4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/1b7da4bcf95f69bf009b0a1f3d0ab740ae77e340

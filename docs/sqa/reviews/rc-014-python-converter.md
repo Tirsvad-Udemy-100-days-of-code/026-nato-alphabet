@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of PY-002 | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of PY-002 | [1b7da4b] |
 
 ---
 
@@ -57,3 +57,4 @@ Go — every Mandatory criterion of QC-PY-001 passes or is not applicable (crite
 
 [PY-002]: ../../../src/nato_alphabet/main.py
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[1b7da4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/1b7da4bcf95f69bf009b0a1f3d0ab740ae77e340
