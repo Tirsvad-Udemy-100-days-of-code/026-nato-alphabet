@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for ADR-0001, ADR-0002, the CI workflow and the Python skeleton (RC-006 to RC-009) | [a381791] |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the package re-review row (RC-015) | [92b9543] |
 
 ---
 
@@ -41,7 +41,8 @@ Tracks backward and forward links between artifact instances so that the cross-a
 | [US-001] | User Story | en | it | [UCD-001], [MIL-002] | [UC-001] | [RC-011] |
 | [UC-001] | Use Case | en | it | [UCD-001], [US-001] | [SSD-001], [PY-002] | [RC-012] |
 | [SSD-001] | System Sequence Diagram | en | it | [UC-001] | [PY-002] | [RC-013] |
-| [PY-002] | Python source | - | - | [UC-001], [SSD-001], [ADR-0001] | - | [RC-014] |
+| [PY-002] | Python source | - | - | [UC-001], [SSD-001], [ADR-0001] | [PY-003] | [RC-014] |
+| [PY-003] | Python source | - | - | [PY-002], [MIL-003] | - | [RC-015] |
 | [PY-001] | Python source | - | - | [ADR-0001], [MIL-001] | - | [RC-009] |
 
 ## Coverage Notes
@@ -85,3 +86,6 @@ Tracks backward and forward links between artifact instances so that the cross-a
 [RC-013]: ./reviews/rc-013-ssd-001.md
 [RC-014]: ./reviews/rc-014-python-converter.md
 [1b7da4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/1b7da4bcf95f69bf009b0a1f3d0ab740ae77e340
+[PY-003]: ../../src/nato_alphabet/__init__.py
+[RC-015]: ./reviews/rc-015-python-package-docs.md
+[92b9543]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/92b954331c2deb7f9f641eb6266007496b404356
