@@ -27,3 +27,9 @@ INVALID_INPUT_TEXT: str = "Sorry, only the letters A to Z are allowed. Try again
 
 ## @brief Text shown before the code words are printed.
 RESULT_TEXT: str = "Phonetic code words:"
+
+## @brief Text encoding of the data file.
+DATA_ENCODING: str = "utf-8"
+
+## @brief Exit status of a session that ended normally.
+EXIT_OK: int = 0

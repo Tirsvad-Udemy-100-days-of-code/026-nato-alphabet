@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [7212302] |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for ADR-0001, ADR-0002, the CI workflow and the Python skeleton (RC-006 to RC-009) | [a381791] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for ADR-0001, ADR-0002, the CI workflow and the Python skeleton (RC-006 to RC-009) | [a381791] |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
 
 ---
 
@@ -32,11 +32,16 @@ Tracks backward and forward links between artifact instances so that the cross-a
 | [SA-001] | Stakeholder Analysis | en | it | [BC-001] | [PP-001] | [RC-002] |
 | [PP-001] | Project Plan | en | it | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003] | - |
 | [MIL-001] | Milestone | en | it | [BC-001], [PP-001] | [MIL-002], [ADR-0001], [ADR-0002] | [RC-003] |
-| [MIL-002] | Milestone | en | it | [BC-001], [MIL-001] | [MIL-003] | [RC-004] |
+| [MIL-002] | Milestone | en | it | [BC-001], [MIL-001] | [MIL-003], [US-001], [UC-001], [PY-002] | [RC-004] |
 | [MIL-003] | Milestone | en | it | [BC-001], [MIL-002] | - | [RC-005] |
 | [ADR-0001] | ADR | - | - | [BC-001], [SA-001] | [PY-001] | [RC-006] |
 | [ADR-0002] | ADR | - | - | [BC-001] | - | [RC-007] |
 | [WF-001] | CI workflow | - | - | [MIL-001] | - | [RC-008] |
+| [UCD-001] | Use Case Diagram | en | it | [SA-001], [BC-001] | [US-001], [UC-001] | [RC-010] |
+| [US-001] | User Story | en | it | [UCD-001], [MIL-002] | [UC-001] | [RC-011] |
+| [UC-001] | Use Case | en | it | [UCD-001], [US-001] | [SSD-001], [PY-002] | [RC-012] |
+| [SSD-001] | System Sequence Diagram | en | it | [UC-001] | [PY-002] | [RC-013] |
+| [PY-002] | Python source | - | - | [UC-001], [SSD-001], [ADR-0001] | - | [RC-014] |
 | [PY-001] | Python source | - | - | [ADR-0001], [MIL-001] | - | [RC-009] |
 
 ## Coverage Notes
@@ -44,7 +49,7 @@ Tracks backward and forward links between artifact instances so that the cross-a
 - `-` in Upstream means foundational; in Downstream it means nothing is built on it yet; in Last Reviewed it means no review record exists.
 - PP-001 has no QC checklist yet; it is accepted by the Product Owner's stand-in.
 - WF-001 and PY-001 are labels for reviewed code instances (no artifact file).
-- Use cases, user stories and design artifacts are added in MIL-002.
+- PY-002 is the label of the reviewed converter code.
 
 ---
 
@@ -69,3 +74,14 @@ Tracks backward and forward links between artifact instances so that the cross-a
 [RC-008]: ./reviews/rc-008-ci-workflow.md
 [RC-009]: ./reviews/rc-009-python-skeleton.md
 [a381791]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/a381791874907359dab9b8f40a3c2b73f95dc0c8
+[UCD-001]: ../use-case-diagram.md
+[US-001]: ../user-stories.md
+[UC-001]: ../uc-001/uc.md
+[SSD-001]: ../uc-001/ssd.md
+[PY-002]: ../../src/nato_alphabet/main.py
+[RC-010]: ./reviews/rc-010-ucd-001.md
+[RC-011]: ./reviews/rc-011-us-001.md
+[RC-012]: ./reviews/rc-012-uc-001.md
+[RC-013]: ./reviews/rc-013-ssd-001.md
+[RC-014]: ./reviews/rc-014-python-converter.md
+[1b7da4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/1b7da4bcf95f69bf009b0a1f3d0ab740ae77e340

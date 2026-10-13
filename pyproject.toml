@@ -53,3 +53,15 @@ convention = "pep257"
 strict = true
 files = ["src", "tests"]
 mypy_path = "src"
+
+[tool.importlinter]
+root_package = "nato_alphabet"
+
+[[tool.importlinter.contracts]]
+name = "Dependencies point inward"
+type = "layers"
+layers = [
+    "nato_alphabet.adapters",
+    "nato_alphabet.application",
+    "nato_alphabet.domain",
+]
