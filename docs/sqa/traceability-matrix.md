@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the package re-review row (RC-015) | [92b9543] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline milestone, the wiki row, the new review records, the concern coverage and the domain education; removed the duplicated template Purpose paragraph; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline milestone, the wiki row, the new review records, the concern coverage and the domain education; removed the duplicated template Purpose paragraph; reviewed in autonomous mode, not independent | [671d7c7] |
 
 ---
 
@@ -110,3 +110,4 @@ Tracks backward and forward links between artifact instances so that the cross-a
 [RC-021]: ./reviews/rc-021-milestone-003-baseline.md
 [RC-022]: ./reviews/rc-022-milestone-004.md
 [RC-023]: ./reviews/rc-023-wiki.md
+[671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe

@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-003 | [7212302] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Set the domain to education (metadata only; content unchanged); reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Set the domain to education (metadata only; content unchanged); reviewed in autonomous mode, not independent | [671d7c7] |
 
 ---
 
@@ -74,3 +74,4 @@ A repository containing `pyproject.toml`, a Python `.gitignore`, the `src/` pack
 
 [BC-001]: ../business-case.md
 [7212302]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/7212302fb9d9fe411215d4702d56a7cfe8834f1a
+[671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe

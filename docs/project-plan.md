@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, accepted as Product Owner stand-in (no QC checklist for PP yet) | [7212302] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004, its schedule row, scope coverage, dependency, risk and Gantt entries, the No-Go rule and an open issue; linked the git host milestones of MIL-001 to MIL-003; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004, its schedule row, scope coverage, dependency, risk and Gantt entries, the No-Go rule and an open issue; linked the git host milestones of MIL-001 to MIL-003; set the domain to education; reviewed in autonomous mode, not independent | [671d7c7] |
 
 ---
 
@@ -102,3 +102,4 @@ A No-Go on a gateway holds the later ones until the cause is fixed and the gatew
 [MS-133]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/133
 [MS-134]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/134
 [MS-537]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/537
+[671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe
