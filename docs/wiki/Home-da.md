@@ -1,16 +1,17 @@
-# NATO-alfabet
+[English](Home) · **Dansk** · [Bahasa Melayu](Home-ms)
 
-🌐 [English](Home) · **Dansk** · [Bahasa Melayu](Home-ms)
+# NATO-alfabet
 
 Et konsolprogram, der staver et ord med det fonetiske NATO-alfabet. Det er opgaven fra dag 26 i Udemys "100 Days of Code: The Complete Python Pro Bootcamp" og viser list comprehensions og dictionary comprehensions. Det kræver Python 3.13 eller nyere og har ingen runtime-afhængigheder.
 
-![Programmet staver ordet Hello](images/spell-word.png)
+![Programmet staver ordet Hello](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/raw/branch/main/docs/images/spell-word.png)
 
 | Side | Læs den, når du vil |
 | --- | --- |
 | [Installation](Install-da) | Oprette et lokalt `.venv` og installere projektet på Windows, Linux eller macOS |
 | [Brug](Usage-da) | Køre programmet og læse dets output |
 | [Udvikling](Development-da) | Køre testene og kontrollerne og bygge kildedokumentationen |
+| [Projektdokumenter](Project-Documents-da) | Se projektets plan- og gennemgangsdokumenter |
 
 ## Hvem det er til
 
