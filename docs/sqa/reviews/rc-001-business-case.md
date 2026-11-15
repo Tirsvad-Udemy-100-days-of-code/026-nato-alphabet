@@ -9,7 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of BC-001 | [7212302] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Review of BC-001 | [7212302] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the missing link definition [SA-001]; content unchanged; reviewed in autonomous mode, not independent | [671d7c7] |
 
 ---
 
@@ -66,3 +67,5 @@ Go — every Mandatory criterion of QC-BC-001 and of QC-LANG-001 passes. The rev
 [QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [7212302]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/7212302fb9d9fe411215d4702d56a7cfe8834f1a
+[SA-001]: ../../stakeholder-analysis.md
+[671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe

@@ -1,15 +1,15 @@
-# Pemasangan
+**English** · [Dansk](Install-da) · [Bahasa Melayu](Install-ms)
 
-🌐 [English](Install) · [Dansk](Install-da) · **Bahasa Melayu**
+# Install
 
-## Apa yang diperlukan
+## What you need
 
-- Python 3.13 atau lebih baharu dengan modul `venv`
+- Python 3.13 or newer with the `venv` module
 - Git
 
-## Langkah
+## Steps
 
-Semua sistem melakukan empat perkara yang sama: klon repositori, cipta persekitaran maya bernama `.venv`, naik taraf pip dan pasang projek.
+Every system does the same four things: clone the repository, create a virtual environment called `.venv`, upgrade pip, install the project.
 
 ### Windows PowerShell
 
@@ -22,7 +22,7 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-Jika PowerShell enggan menjalankan skrip pengaktifan, jalankan `Set-ExecutionPolicy -Scope Process RemoteSigned` dahulu. Ia hanya terpakai pada tetingkap itu.
+If PowerShell refuses to run the activation script, run `Set-ExecutionPolicy -Scope Process RemoteSigned` first. It only applies to that window.
 
 ### Linux Debian
 
@@ -48,10 +48,10 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-## Semak ia berfungsi
+## Check that it works
 
 ```bash
 python -m nato_alphabet
 ```
 
-Masukkan satu perkataan. Anda akan melihat kata kodnya. Seterusnya: [Penggunaan](Usage-ms).
+Enter a word. You should see its code words. Next: [Usage](Usage).

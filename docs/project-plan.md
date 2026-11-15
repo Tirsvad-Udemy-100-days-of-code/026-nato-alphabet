@@ -4,26 +4,29 @@
 | Key | Value |
 | --- | --- |
 | ID | PP-001 |
-| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003] |
+| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, accepted as Product Owner stand-in (no QC checklist for PP yet) | [7212302] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, accepted as Product Owner stand-in (no QC checklist for PP yet) | [7212302] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004, its schedule row, scope coverage, dependency, risk and Gantt entries, the No-Go rule and an open issue; linked the git host milestones of MIL-001 to MIL-003; set the domain to education; reviewed in autonomous mode, not independent | [671d7c7] |
 
 ---
 
 ## Purpose
 
-Schedule the three phases that deliver the Day 26 NATO alphabet assignment as a tested and documented repository: foundation, converter, documentation and publication. The plan runs against the Business Case's constraint of a small personal project with one pull request per milestone.
+Schedule the three phases that deliver the Day 26 NATO alphabet assignment as a tested and documented repository: foundation, converter, documentation and publication. The plan runs against the Business Case's constraint of a small personal project with one pull request per milestone. A fourth gateway, [MIL-004], was added on 2026-11-15 to bring the finished project to the baseline of the framework; it runs from 2026-11-15 to 2026-11-22.
 
 ## Planning Assumptions
 
-- The plan starts 2026-10-13 and ends by 2026-10-16.
+- The plan starts 2026-10-13; its first three gateways end by 2026-10-16 and the baseline gateway [MIL-004] ends by 2026-11-22.
 - Each phase is one day of work and one pull request that closes its issues.
 - S01 is owner and reviewer of every gateway; in autonomous mode the AI acts as S01's stand-in and every review record says so.
+- The baseline gateway [MIL-004] starts 2026-11-15 and ends by 2026-11-22, one week (source: [BC-001], Assumptions). It is the only gateway outside the one-day windows of the first three, because of the agreed minimum quality baseline of the framework.
+- For [MIL-004] S01 has authorised the assistant to commit, push, open the pull request and merge it, and the review is done by an AI stand-in for S01 (source: [BC-001], Constraints; [SA-001], Conflicting Interests and Mitigations).
 - The language of the planning documents is English (registry `Languages`); the wiki is written in English, Danish and Bahasa Malaysia.
 - The git host is the Gitea instance at `git.tirsystem.com`; its token comes from the git-ignored `.env`.
 
@@ -31,9 +34,10 @@ Schedule the three phases that deliver the Day 26 NATO alphabet assignment as a 
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Repository foundation | [MIL-001] | 2026-10-13 to 2026-10-14 | 2026-10-14 | S01 | none | Project configuration, package skeleton, Doxyfile, CI workflow, ADRs, repository description and topics | |
-| NATO converter | [MIL-002] | 2026-10-14 to 2026-10-15 | 2026-10-15 | S01 | US-001 | Working console program with pytest tests and Doxygen comments | |
-| Documentation and publication | [MIL-003] | 2026-10-15 to 2026-10-16 | 2026-10-16 | S01 | none | README, screenshots, wiki in en, da and ms | |
+| Repository foundation | [MIL-001] | 2026-10-13 to 2026-10-14 | 2026-10-14 | S01 | none | Project configuration, package skeleton, Doxyfile, CI workflow, ADRs, repository description and topics | [Milestone 132][MS-132] |
+| NATO converter | [MIL-002] | 2026-10-14 to 2026-10-15 | 2026-10-15 | S01 | US-001 | Working console program with pytest tests and Doxygen comments | [Milestone 133][MS-133] |
+| Documentation and publication | [MIL-003] | 2026-10-15 to 2026-10-16 | 2026-10-16 | S01 | none | README, screenshots, wiki in en, da and ms | [Milestone 134][MS-134] |
+| Framework baseline | [MIL-004] | 2026-11-15 to 2026-11-22 | 2026-11-22 | S01 | none | The framework release, the wiki in `docs/wiki/`, the licence metadata, the traceability matrix and the review records | [Milestone 537][MS-537] |
 
 ```plantuml
 @startgantt
@@ -43,7 +47,9 @@ Project starts 2026-10-13
 [NATO converter] starts 2026-10-14 and ends 2026-10-15
 [MIL-002 Go/No-Go] happens 2026-10-15
 [Documentation and publication] starts 2026-10-15 and ends 2026-10-16
+[Framework baseline] starts 2026-11-15 and ends 2026-11-22
 [MIL-003 Go/No-Go] happens 2026-10-16
+[Framework baseline Go/No-Go] happens 2026-11-22
 @endgantt
 ```
 
@@ -57,14 +63,15 @@ Project starts 2026-10-13
 | CI workflow that runs the tests | [MIL-001] |
 | README, wiki (en, da, ms) and screenshots | [MIL-003] |
 | Repository description and topics | [MIL-001] |
+| The baseline: framework release, wiki location, licence metadata, traceability matrix, review records | [MIL-004] |
 
 ## Dependencies
 
 ```
-MIL-001 → MIL-002 → MIL-003
+MIL-001 → MIL-002 → MIL-003 → MIL-004
 ```
 
-A No-Go on a gateway holds the later ones until the cause is fixed and the gateway is reviewed again; later windows shift by the same days.
+A No-Go on a gateway holds the later ones until the cause is fixed and the gateway is reviewed again; later windows shift by the same days. A No-Go on [MIL-004] leaves the program and the earlier gateways as they are; S01 decides the new date.
 
 ## Plan Risks
 
@@ -73,12 +80,14 @@ A No-Go on a gateway holds the later ones until the cause is fixed and the gatew
 | The host token lacks scope for repository settings or wiki | MIL-001 or MIL-003 cannot finish | Stop and report (autonomous-mode stop rule); S01 supplies a token with the scope |
 | The CI runner on the host is not available | CI workflow cannot be proven green | The workflow is verified by running the same commands locally; the gap is recorded in the review |
 | Wiki translation takes longer than planned | MIL-003 slips | Wiki pages are short and share one structure |
+| A continuous integration (CI) check fails on the pull request of [MIL-004] | The merge is delayed past 2026-11-22 | The failure is fixed on the same branch and the checks run again; after three failed rounds on one cause the work stops and S01 decides (trace: success criterion 7 of [BC-001]) |
 
 ## Open Issues
 
 - "Python greater than 3.13" is read as 3.13 or newer (`requires-python = ">=3.13"`); S01 can tighten it.
 - `.env` also holds a GitHub token and user; no GitHub mirror was requested, so they are not used.
 - Screenshots are rendered from the real program output (a terminal-style image), because a desktop screenshot cannot be taken from an unattended run; S01 may replace them with native captures.
+- Framework baseline (closed in [MIL-004]): the wiki pages moved from `wiki/` to `docs/wiki/`, the location the framework requires; [MIL-003] (deliverable and criterion 3) still says only that the wiki is published, as it was accepted. The older wiki pages named with a space (`Home da`, `Home ms`) exist on the git host and are not deleted by this project. Every document with a `Domain` row now has the domain `education`.
 
 ---
 
@@ -88,3 +97,9 @@ A No-Go on a gateway holds the later ones until the cause is fixed and the gatew
 [MIL-002]: ./milestones/mil-002-nato-converter.md
 [MIL-003]: ./milestones/mil-003-documentation-and-publication.md
 [7212302]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/7212302fb9d9fe411215d4702d56a7cfe8834f1a
+[MIL-004]: ./milestones/mil-004-framework-baseline.md
+[MS-132]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/132
+[MS-133]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/133
+[MS-134]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/134
+[MS-537]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/milestone/537
+[671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe

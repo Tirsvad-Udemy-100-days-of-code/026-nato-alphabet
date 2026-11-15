@@ -152,9 +152,12 @@ src/nato_alphabet/
   data/               nato_phonetic_alphabet.csv
 tests/                pytest tests, mirroring src/
 docs/                 project documents (see the appendix)
-wiki/                 wiki pages in en, da and ms
+docs/wiki/            wiki pages in en, da and ms
+framework/            the SQA and QC framework (git submodule)
 .gitea/workflows/     CI workflow
 pyproject.toml        project configuration
+.editorconfig         editor settings of the framework baseline
+.env.example          placeholders for the tokens of the framework scripts
 Doxyfile              Doxygen configuration
 ```
 
@@ -174,7 +177,6 @@ The documents a newcomer needs, in reading order.
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
@@ -182,8 +184,6 @@ The documents a newcomer needs, in reading order.
 | [Architecture decisions][adr] | Why the data is read with the standard library and which analysis documents were skipped |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
 | [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
 
 ---
 
@@ -193,7 +193,6 @@ The documents a newcomer needs, in reading order.
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/issues
 [screenshot-spell]: ./docs/images/spell-word.png
 [screenshot-retry]: ./docs/images/retry-invalid.png
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
@@ -202,5 +201,3 @@ The documents a newcomer needs, in reading order.
 [ADR-0001]: ./docs/adr/adr-0001-read-nato-data-with-csv-module.md
 [registry]: ./docs/artifact-registry.md
 [TM-001]: ./docs/sqa/traceability-matrix.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
