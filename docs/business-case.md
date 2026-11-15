@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-001 | [7212302] |
 | 2026-11-15 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective O6, success criterion 7, a scope item, a risk, an assumption and a constraint exception for the baseline milestone MIL-004; added the link definitions of the cited documents; set the domain to education; reviewed in autonomous mode, not independent | [671d7c7] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral rewrite of the imports of `csv_alphabet.py` so the OpenGrep scan passes; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral rewrite of the imports of `csv_alphabet.py` so the OpenGrep scan passes; reviewed in autonomous mode, not independent | [a24360c] |
 
 ---
 
@@ -149,3 +149,4 @@ Proceed: the scope is small, the risks are low and every objective is verifiable
 [PP-001]: ./project-plan.md
 [MIL-004]: ./milestones/mil-004-framework-baseline.md
 [671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe
+[a24360c]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/a24360c46aa27a86ff6fb7bc7b5d96362330928c
