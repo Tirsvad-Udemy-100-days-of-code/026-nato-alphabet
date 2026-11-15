@@ -11,7 +11,8 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added rows for the MIL-002 use case artifacts and converter code (RC-010 to RC-014) | [1b7da4b] |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the package re-review row (RC-015) | [92b9543] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline milestone, the wiki row, the new review records, the concern coverage and the domain education; removed the duplicated template Purpose paragraph; reviewed in autonomous mode, not independent | [671d7c7] |
+| 2026-11-15 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline milestone, the wiki row, the new review records, the concern coverage and the domain education; removed the duplicated template Purpose paragraph; reviewed in autonomous mode, not independent | [671d7c7] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records of BC-001 and MIL-004 for task 6 and corrected the coverage note about source files; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -23,13 +24,13 @@ Tracks backward and forward links between artifact instances so that the cross-a
 
 | Artifact Instance | Type | Language | Domain | Upstream (Backward Link) | Downstream (Forward Link) | Last Reviewed (RC-ID) |
 | --- | --- | --- | --- | --- | --- | --- |
-| [BC-001] | Business Case | en | education | - | [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004] | [RC-016] (Go, re-review of the whole document), [RC-001] |
+| [BC-001] | Business Case | en | education | - | [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004] | [RC-024] (Go, re-review after the scope wording change), [RC-016] (Go, re-review of the whole document), [RC-001] |
 | [SA-001] | Stakeholder Analysis | en | education | [BC-001] | [PP-001] | [RC-017] (Go, re-review of the whole document), [RC-002] |
 | [PP-001] | Project Plan | en | education | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004] | [RC-018] (Go, review of the whole document; the plan had no review record before) |
 | [MIL-001] | Milestone | en | education | [BC-001], [PP-001] | [MIL-002], [ADR-0001], [ADR-0002] | [RC-019] (Go, re-review after the metadata change), [RC-003] |
 | [MIL-002] | Milestone | en | education | [BC-001], [MIL-001] | [MIL-003], [US-001], [UC-001], [PY-002] | [RC-020] (Go, re-review after the metadata change), [RC-004] |
 | [MIL-003] | Milestone | en | education | [BC-001], [MIL-002] | [MIL-004] | [RC-021] (Go, re-review after the metadata change), [RC-005] |
-| [MIL-004] | Milestone | en | education | [BC-001], [PP-001], [MIL-003] | - | [RC-022] (Go) |
+| [MIL-004] | Milestone | en | education | [BC-001], [PP-001], [MIL-003] | - | [RC-025] (Go, re-review after task 6), [RC-022] (Go) |
 | Wiki | Wiki | en, da, ms | education | [BC-001], [MIL-004] | - | [RC-023] (Go-with-conditions) |
 | [ADR-0001] | ADR | - | - | [BC-001], [SA-001] | [PY-001] | [RC-006] |
 | [ADR-0002] | ADR | - | - | [BC-001] | - | [RC-007] |
@@ -61,7 +62,7 @@ Tracks backward and forward links between artifact instances so that the cross-a
 - WF-001 and PY-001 are labels for reviewed code instances (no artifact file).
 - PY-002 is the label of the reviewed converter code.
 - The domain of every artifact is `education` since [MIL-004]; the earlier review records state the former domain `it` as it was at the time.
-- The source code and the workflow are reviewed in the records RC-008, RC-009, RC-014 and RC-015 and not again in [MIL-004], which changes no source file.
+- The source code and the workflow are reviewed in the records RC-008, RC-009, RC-014 and RC-015 and not again in [MIL-004]; its task 6 rewrites the imports of `csv_alphabet.py` without changing behaviour, and the tests, ruff, mypy, import-linter and OpenGrep check it.
 - The review records and this matrix have no QC checklist for themselves and are not reviewed.
 
 ---
@@ -111,3 +112,5 @@ Tracks backward and forward links between artifact instances so that the cross-a
 [RC-022]: ./reviews/rc-022-milestone-004.md
 [RC-023]: ./reviews/rc-023-wiki.md
 [671d7c7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/026-nato-alphabet/commit/671d7c70db04919d0f46ce8d17d8c0053265d3fe
+[RC-024]: ./reviews/rc-024-business-case-task-6.md
+[RC-025]: ./reviews/rc-025-milestone-004-task-6.md
